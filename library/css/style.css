@@ -10,6 +10,7 @@ should be placed in either custom-variables.less, a new less file,
 or the proper file inside less/brew
 ******************************************************************/
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -276,8 +277,8 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 15px;
   line-height: 1.42857143;
   color: #333333;
   background-color: #efefef;
@@ -8075,15 +8076,15 @@ This is just for the sample BREW site.  Feel free to delete
   margin-bottom: 60px;
   padding-top: 30px;
   text-align: center;
-  height: 350px;
-  background: url('../images/hero.png') #2a5781;
+  height: 250px;
+  background: url('../images/binary.jpg') #2a5781;
   background-size: cover;
   background-position: center center;
   color: #fff;
 }
 @media (min-width: 480px) {
   .homebanner {
-    padding-top: 70px;
+    padding-top: 40px;
   }
 }
 .homebanner p {
@@ -8139,6 +8140,24 @@ This is just for the sample BREW site.  Feel free to delete
 .about:hover i {
   color: #626c72;
   transition: all 0.35s ease;
+}
+
+#projectthumb {
+  float: right;
+}
+.title {
+margin-top: 0;
+}
+.homebanner h1{
+  font-weight: 600;
+  text-shadow: 1.5px 1.5px black;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 
+}
+.homebanner h2{
+  text-shadow: 1.5px 1.5px black;
+  letter-spacing: 2px;
 }
 /*
 RETINA (2x RESOLUTION DEVICES)

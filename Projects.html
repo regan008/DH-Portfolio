@@ -1,0 +1,30 @@
+<?php
+/*
+Template Name: Home Page Template
+*/
+?>
+
+<?php get_header(); ?>
+
+
+<?php $featured_posts = get_posts('category=9'); ?>
+<div class="container">
+	<?php foreach($featured_posts as $post) { ?>
+		<div class="row">
+			<div class="col-md-4">
+				<?php echo get_the_post_thumbnail($post->ID, 'thumbnail')?>
+			</div>
+			<div class="col-md-8">
+				<h2 class="title"><?php echo $post->post_title; ?></h2>
+			</div>
+		</div>
+		<?php } ?>
+</div>
+
+
+
+
+
+
+
+<?php get_footer(); ?>
