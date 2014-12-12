@@ -16,7 +16,7 @@ Template Name: Projects Page template
   </div> <!-- end .container-->
 </div> <!-- end #banner-->
 
-<?php $featured_posts = get_posts('category'=> 8, 'posts_per_page' => 15); ?>
+<?php $featured_posts = get_posts('category=8&posts_per_page=15'); ?>
 <div class="container">
 	<?php foreach($featured_posts as $post) { ?>
 		<div class="row" id="project">
