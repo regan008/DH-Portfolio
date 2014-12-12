@@ -19,7 +19,7 @@ Template Name: Projects Page template
 <?php $featured_posts = get_posts('category'=> 8, 'posts_per_page' => 15); ?>
 <div class="container">
 	<?php foreach($featured_posts as $post) { ?>
-		<div class="row">
+		<div class="row" id="project">
 			<div class="col-md-3" id="projecthumb">
 				<?php echo get_the_post_thumbnail($post->ID, 'thumbnail')?>
 			</div>

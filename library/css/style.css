@@ -8159,6 +8159,10 @@ margin-top: 0;
   text-shadow: 1.5px 1.5px black;
   letter-spacing: 2px;
 }
+#project {
+  margin-botton: 27px;
+}
+
 /*
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
